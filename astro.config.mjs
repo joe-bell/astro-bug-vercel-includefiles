@@ -9,5 +9,5 @@ const includeFiles = [
 // https://astro.build/config
 export default defineConfig({
   output: "hybrid",
-  adapter: vercel({ functionPerRoute: false }),
+  adapter: vercel({ functionPerRoute: false, includeFiles }),
 });
