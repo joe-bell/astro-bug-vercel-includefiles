@@ -3,8 +3,6 @@ import path from "node:path";
 import fs from "node:fs/promises";
 import sharp from "sharp";
 
-export const prerender = false;
-
 const helloThere = await sharp(
   path.join(process.cwd(), "src", "assets", "images", "hello-there.jpg")
 )
